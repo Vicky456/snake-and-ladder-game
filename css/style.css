@@ -93,7 +93,7 @@ div#fit_div {
 .box{
     box-shadow: 0px 12px 26px -11px;
     /*transform: perspective(509px) rotatex(32deg);*/
-    margin-left: 47px;
+    margin-left: 87px;
     transition: 1s all;
 }
 
