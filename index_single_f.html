@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game page</title>
+
+    <style>
+        .box_1 {
+            float: right;
+            width: 50px;
+            height: 50px;
+            background:  #1500ffb5;
+            margin:  1px;
+        }
+
+        div#root {
+            float: left;
+        }
+
+        p.box_p {
+            margin-top: 10px;
+            margin-left: 26px;
+            color: #fff;
+            font-size: 10px;
+        }
+        .blo_cube{
+            display: none;
+            animation: 0.51s linear anm;
+        }
+
+
+        @keyframes anm {
+            0%{transform: rotateZ(216deg);}
+            100%{transform: rotateZ(0deg);}
+        }
+
+        @keyframes anm1 {
+            0%{display: block;opacity: 1}
+            100%{display: none;opacity: 0}
+        }
+        .play {
+            background: black;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-top: -22px;
+            margin-left: 11px;
+            display: none;
+        }
+
+        .disp{
+            display: block;
+        }
+
+        .dis_anm{
+            animation: 0.51s linear anm1;
+        }
+
+        #won{
+            display: none;
+        }
+        div#fit_div {
+            position:  absolute;
+            margin-top:  10%;
+            margin-left: 60%;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+
+</div>
+
+<div>
+    <img src="img/ladder_PNG14808.png" style="
+    width: 27px;
+    height: 296px;
+    position:  absolute;
+    top: 39%;
+    left: 19%;
+    transform: rotateZ(60deg);
+">
+
+
+    <img src="img/ladder_PNG14808.png" style="
+    width: 27px;
+    height: 296px;
+    position:  absolute;
+    top: 14%;
+    left: 13%;
+    transform: rotateZ(-46deg);
+">
+
+    <img src="img/ladder_PNG14808.png" style="
+    width: 26px;
+    height: 91px;
+    position:  absolute;
+    top: 21%;
+    left: 25%;
+    transform: rotateZ(0deg);
+">
+
+    <img src="img/images_ss.png" style="
+    width: 259px;
+    height: 24px;
+    position:  absolute;
+    top: 59%;
+    left: 12%;
+    transform: rotateZ(27deg);
+">
+
+    <img src="img/images_ss.png" style="
+    width: 394px;
+    height: 31px;
+    position:  absolute;
+    top: 27%;
+    left: 6%;
+    transform: rotateZ(158deg) rotateX(150deg);
+">
+
+
+    <img src="img/images_ss.png" style="
+    width: 252px;
+    height: 31px;
+    position:  absolute;
+    top: 10%;
+    left: 9%;
+    transform: rotateZ(158deg) rotateX(150deg);
+">
+
+
+
+</div>
+
+<div>
+    <div id="root_d" >
+
+        <div class="blo_cube" style="width: 70px;height: 70px;box-shadow: 0px 2px 6px -2px;float:  right;margin-right: 28%;margin-top: 14%;"><b style="margin: 11% 43%;font-size:  2em;float: left;">.<b></b></b></div>
+
+        <div class="blo_cube" style="width: 70px;height: 70px;box-shadow: 0px 2px 6px -2px;float:  right;margin-right: 28%;margin-top: 14%;">
+            <b style="margin: 12% 29%;font-size:  2em;float: left;">.<b></b></b><b style="margin: -65% 57%;font-size:  2em;float: left;">.<b></b></b></div>
+
+
+        <div class="blo_cube" style="width: 70px; height: 70px; box-shadow: 0px 2px 6px -2px; float: right; margin-right: 28%; margin-top: 14%;">
+            <b style="margin: 12% 20%;font-size:  2em;float: left;">.<b></b></b>
+            <b style="margin: -65% 44%;font-size:  2em;float: left;">.<b></b></b><b style="margin: -65% 68%;font-size:  2em;float: left;">.<b></b></b></div>
+
+
+        <div class="blo_cube" style="width: 70px; height: 70px; box-shadow: 0px 2px 6px -2px; float: right; margin-right: 28%; margin-top: 14%;">
+            <b style="margin: -5% 22%;font-size:  2em;float: left;">.<b></b></b>
+            <b style="margin: -47% 58%;font-size:  2em;float: left;">.<b></b></b>
+            <b style="margin: -9% 60%;font-size:  2em;float: left;">.<b></b></b><b style="margin: -44% 25%;font-size:  2em;float: left;">.<b></b></b></div>
+
+
+        <div class="blo_cube" style="width: 70px; height: 70px; box-shadow: 0px 2px 6px -2px; float: right; margin-right: 28%; margin-top: 14%;">
+            <b style="margin: 2% 20%;font-size:  2em;float: left;">.<b></b></b>
+            <b style="margin: -74% 44%;font-size:  2em;float: left;">.<b></b></b>
+            <b style="margin: -53% 68%;font-size:  2em;float: left;">.<b></b></b>
+            <b style="margin: -23% 68%;font-size:  2em;float: left;">.<b></b></b><b style="margin: -28% 21%;font-size:  2em;float: left;">.<b></b></b></div>
+
+
+        <div class="blo_cube" style="width: 70px; height: 70px; box-shadow: 0px 2px 6px -2px; float: right; margin-right: 28%; margin-top: 14%;">
+            <b style="margin: -3% 20%;font-size:  2em;float: left;">.<b></b></b>
+            <b style="margin: -51% 44%;font-size:  2em;float: left;">.<b></b></b>
+
+            <b style="margin: -51% 68%;font-size:  2em;float: left;">.<b></b></b>
+
+            <b style="margin: -16% 68%;font-size:  2em;float: left;">.<b></b></b>
+            <b style="margin: -37% 44%;font-size:  2em;float: left;">.<b></b></b><b style="margin: -37% 19%;font-size:  2em;float: left;">.<b></b></b></div>
+
+
+
+
+    </div>
+    <input type="button"  onclick="fun()" value="try this" id="try_btn" style="
+    position:  absolute;
+    margin-top: 24%;
+    margin-left: 62%;
+    width:  151px;
+    height: 57px;
+
+
+">
+
+
+    <h1 id="won" style="
+    position:  absolute;
+    margin-top:  32%;
+    margin-left: 54%;
+    color: #00f900;
+    font-size: 45px;
+    text-shadow: 1px 4px 8px #000;
+    font-family: monospace;
+">Player Won the Game</h1>
+
+
+    <h2 id="tit" style="
+    margin-left: 53%;
+    margin-top:  53px;
+    position:  absolute;
+    text-shadow: 1px 2px 7px #0006;
+    color: red;
+    font-size: 32px;
+">Play snake and ladder Game</h2>
+
+
+
+    <div id="fit_div">
+        <input type="text" placeholder="Username" id="username">
+        <input type="button" onclick="fun_name(this)" value="Start">
+    </div>
+</div>
+
+
+<script >
+
+    var name="";
+    var root=document.getElementById("root");
+    var k=100;
+    var matrix="";
+    var color_max=["#5000ffb5","#ff0065b5","#dd00ffb5","#00793eb5","#ff4c00b5"];
+
+    for(let i=1;i<=10;i++){
+        var t="<div class='row'>";
+        if(i%2==0){
+
+            for(let j=9;j>=0;j--){
+                t+="<div class='box_1' style='background: "+color_max[parseInt(Math.random()*color_max.length)]+"' ><p class='box_p'>"+k+"</p><div id='box_id"+k+"' class='play'></div></div>";
+                k--;
+            }
+        }else{
+
+            for(let j=0;j<10;j++){
+                t="<div class='box_1' style='background: "+color_max[parseInt(Math.random()*color_max.length)]+"' ><p class='box_p'>"+k+"</p><div class='play' id='box_id"+k+"'></div></div>"+t;
+                k--;
+            }
+        }
+
+
+        t+='</div>';
+
+        matrix+=t;
+    }
+   //console.log(matrix);
+    root.innerHTML=matrix;
+
+
+    var root_d=document.getElementById("root_d");
+
+
+    var cube_data=document.getElementsByClassName("blo_cube");
+
+var player=1;
+
+
+    function fun() {
+
+        for(var i=0;i<cube_data.length;i++){
+            cube_data[i].style.display='none';
+        }
+
+        var ii=parseInt((Math.random()*6));
+        cube_data[ii].style.display='block';
+
+        //alert(""+parseInt((Math.random()*6)+1));
+
+        document.getElementById("box_id"+player+"").className = " play";
+
+        for (var j=player;j<=(player+ii);j++){
+
+
+                document.getElementById("box_id"+j+"").className = "disp dis_anm play";
+
+
+
+        }
+
+
+
+
+        if(player==1) {
+            jsHello(1,((player+ii)));
+            player = (player + ii);
+        }
+        else{
+
+
+
+            if(((player+ii)+1)>100){
+                for(var t=1;t<100;t++){
+                    document.getElementById("box_id"+t+"").className = " play";
+                }
+
+
+                document.getElementById("box_id"+player+"").className = "desp play";
+
+            }else{
+                jsHello(player-1,((player+ii)+1));
+
+
+
+                player=(player+ii+1);
+            }
+
+
+
+
+            if(player===100){
+                var dd=document.getElementById("won");
+                dd.innerHTML="Player "+name+" Won the Game";
+                dd.style.display="block";
+            }
+
+
+
+        }
+
+
+
+
+        var ck=ck_fun();
+        if(ck){
+            document.getElementById("box_id"+player+"").className = "disp play";
+        }
+
+    }
+
+
+
+    function ck_fun() {
+        var option={3:33,35:79,54:74};
+
+        console.log(player);
+
+        for (let key in option ) {
+            if(key==player){
+                document.getElementById("box_id"+player+"").className = " play";
+                document.getElementById("box_id"+option[key]+"").className = "disp play";
+                player=option[key];
+                return false;
+            }
+
+        }
+        var option_s={37:8,72:42,94:78};
+
+        for (let key in option_s ) {
+            if(key==player){
+                document.getElementById("box_id"+player+"").className = " play";
+                document.getElementById("box_id"+option_s[key]+"").className = "disp play";
+                player=option_s[key];
+                return false;
+            }
+
+        }
+        return true;
+    }
+
+    function jsHello(m,n) {
+        console.log(n+" "+m);
+        if (m === n) return;
+
+        setTimeout(function () {
+
+           document.getElementById("box_id"+m+"").className = "play";
+
+            jsHello(++m,n);
+
+        }, 100);
+
+
+    }
+
+    document.getElementById('try_btn').style.display="none";
+
+    function fun_name(e) {
+
+        document.getElementById('fit_div').style.display="none";
+
+        name=document.getElementById("username").value;
+        document.getElementById('try_btn').style.display="block";
+
+        document.getElementById('tit').innerHTML="Play snake and ladder Game "+name;
+    }
+
+</script>
+
+</body>
+</html>
